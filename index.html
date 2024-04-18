@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sameer Bal Tamang - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="mypic.jpg" alt="Picture of Me" class="profile-pic">
+      <div class="header-text">
+        <h1>Sameer Bal Tamang</h1>
+        <h2>Front-end Developer, Software Developer</h2>
+        <div class="header-buttons">
+          <a href="resume.pdf" target="_blank" class="btn"><i class="fa fa-download"></i> Resume</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am Sameer Bal Tamang and I am originally from Nepal. However, I have been living in Canada for about a year now. My coding journey begun when I was at grade 9. I got to explore some basic concepts about programming in a language called QBasic. Later, when I went to higher secondary level, I started to learn more about C/C++, HTML, CSS and JS.
+        I wish to a great software developer and pursue my career in the same field. I want to make softwares that inspire the world and contribute to the society positively.
+      </p>
+      <h2>Academic Honesty & Integrity</h2>
+      <p>
+        I declare that this final assessment for WEB222 is wholly creation of my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>Basic Information</h2>
+      <table>
+        <tr>
+          <td><strong>AGE:</strong></td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td><strong>EMAIL:</strong></td>
+          <td>sbtamang@myseneca.ca</td>
+        </tr>
+        <tr>
+          <td><strong>LANGUAGE:</strong></td>
+          <td>English, Nepali, Hindi</td>
+        </tr>
+        <tr>
+          <td><strong>CLASS SECTION:</strong></td>
+          <td>NEE</td>
+        </tr>
+        <tr>
+          <td><strong>STUDENT ID:</strong></td>
+          <td>159089226</td>
+        </tr>
+        <tr>
+          <td><strong>INSTRUCTOR:</strong></td>
+          <td>Mark Meritt</td>
+        </tr>
+      </table>
+      <p><strong>DATE:</strong> April 17th, 2024</p>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <div class="degree-container">
+        <div class="degree">
+          <p>2023 - 2025 (expected)</p>
+          <h3>College Diploma</h3>
+        </div>
+        <div class="degree-info">
+          <h3>College Diploma</h3>
+          <h4>Seneca Polytechnic College</h4>
+          <p>
+            Majoring in  <span class="highlight">Computer programming</span><br>
+            Awarded with <span class="highlight">Presidential Honors</span> for securing 4.0 GPA in first sem.
+          </p>
+        </div>
+      </div>
+      <div class="degree-container">
+        <div class="degree">
+          <p>2029 - 2021 (completed) </p>
+          <h3>High School Diploma</h3>
+        </div>
+        <div class="degree-info">
+          <h3>High School Diploma</h3>
+          <h4>Xavier International College</h4>
+          <p>
+            Majored in <span class="highlight">Physics</span><br>
+            Awarded with the <span class="highlight">Presidential scholarship</span> for 2 years course.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://httpbin.org/post" method="POST" id="contact-form">
+        <input type="text" name="Name" placeholder="NAME" style="margin-top: 10px; height: 30px;" required>
+        <input type="email" name="Email" placeholder="EMAIL ADDRESS" style="height: 30px;" required>
+        <input type="text" name="Address" placeholder="ADDRESS" style="height: 30px;" required>
+        <input type="text" list="canadian_cities" name="City" placeholder="CITY" style="height: 30px;" required>
+        <input type="text" name="postal" placeholder="POSTAL CODE" pattern="^[A-Za-z]\d[A-Za-z]+\s+\d[A-Za-z]\d$" style="height: 30px;" required>
+        <div class="radio-group">
+            <label>
+              <input type="radio" id="question" name="about?" value="Question" onclick="toBeHired()">
+              QUESTION
+            </label>
+            <label>
+              <input type="radio" id="comment" name="about?" value="Comment" onclick="toBeHired()">
+              COMMENT
+            </label>
+            <label>
+              <input type="radio" id="hiring" name="about?" value="Hiring" onclick="toBeHired()">
+              HIRING
+            </label>
+          </div>
+        <input type="number" id="hourly_wage" name="Wage" placeholder="HOURLY WAGE" pattern="/[1-9]\d{1,8}\.\d{2}/" style="display: none; height: 30px;">
+        <textarea name="Comment/Question" cols="30" rows="5" form="contact-form" placeholder="COMMENT OR QUESTION"></textarea>
+        <input type="submit" value="SUBMIT">
+      </form>
+    </section>
+  </main>
+
+  <datalist id="canadian_cities">
+    <option value="Toronto">
+    <option value="Montreal">
+    <option value="Vancouver">
+    <option value="Calgary">
+    <option value="Edmonton">
+    <option value="Ottawa">
+    <option value="Winnipeg">
+    <option value="Quebec City">
+    <option value="Hamilton">
+    <option value="Kitchener">
+    <option value="London">
+    <option value="Halifax">
+    <option value="Victoria">
+    <option value="Saskatoon">
+    <option value="Regina">
+    <option value="Oshawa">
+    <option value="Windsor">
+    <option value="Barrie">
+    <option value="Abbotsford">
+    <option value="Sherbrooke">
+  </datalist>
+
+  <script src="script.js"></script>
+</body>
+</html>
